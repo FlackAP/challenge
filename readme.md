@@ -1,4 +1,4 @@
-**OpenTable Coding Challenge
+#OpenTable Coding Challenge
 
 First run `npm update` followed by `bower install`
 
