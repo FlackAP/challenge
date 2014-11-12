@@ -1,8 +1,90 @@
-body {
-  background-color: #f7f7f7;
+// resets and element styles
+
+@font-face {
+    font-family: 'franklin_gothic_fsbook';
+    src: url('../fonts/Franklin-Gothic/FranklinGothic-Book-webfont.woff') format('woff');
 }
 
-.logo {
-  padding: 10px 10px;
+body {
+  background-color: #f7f7f7;
+  font-family: 'franklin_gothic_fsbook';
+}
+
+h1 {
+  font-size: 26px;
+}
+
+// utility styles
+
+.full-width {
+  width:100%;
+}
+
+.btn {
+  border: 1px solid white;
+  width:90%;
+  text-align:left;
+  // over-ride bootstrap button font-size
+  font-size:inherit;
+  white-space: normal;
+}
+
+.arrow:after {
+  content: url(../images/arrow.png);
+  width: 8px;
+  height: 10px;
+  float: right;
+  margin: 1px 0 0 10px;
+}
+
+// header/hero styles
+.masthead {
+  margin: 0;
+
+  .logo { padding: 20px 0px; }
+}
+
+.hero {
+  background: #da3743;
+  color:white;
+  width:100%;
+  margin:0;
+
+  .hero-image {
+    background-image:url('../images/hero.png');
+    background-position: center;
+    background-size: cover;
+    min-height:200px;
+
+    @media (min-width:992px) {
+      min-height:450px;
+    }
+  }
+
+  .nav {
+    padding: 10px 20px;
+
+    p {
+      font-size:14px;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; 
+      li {
+        list-style-type:none;
+        padding: 10px 0;
+
+        a {
+          font-size: 16px;
+          color:white;
+          text-decoration:none;
+
+        }
+      }
+    }
+
+  }
 }
 

@@ -4,8 +4,32 @@ extends ../layouts/main
 // cool content goes here
 block content
   
-  .container
-    .row
-      .col-md-12
-        img.logo(src="images/logo.png")
-    .row
+  
+  .row.masthead
+    .col-md-12
+      img.logo(src="images/logo.png")
+  .row.hero
+    .col-sm-12.col-md-7.hero-image
+    .col-sm-12.col-md-5.nav
+      h1 Welcome to the OpenTable Internal Homepage
+      p Click the links to find the information you need. New to OpenTable? Visit our People & Culture Onboarding page. (We recommend that you set this as your browser’s default homepage)
+      .col-xs-12.col-sm-6
+        ul
+          li
+            a(href="https://wiki.otcorp.opentable.com:8443/dashboard.action"): .btn.arrow Wiki Home
+          li  
+            a(href="https://wiki.otcorp.opentable.com/browsepeople.action"): .btn.arrow People Directory
+          li
+            a(href="https://wiki.otcorp.opentable.com/x/UIr2"): .btn.arrow People and Culture
+          li
+            a(href="https://login.salesforce.com/"): .btn.arrow Sales Force
+      .col-xs-12.col-sm-6
+        ul
+          li
+            a(href="https://wiki.otcorp.opentable.com/x/0A6b"): .btn.arrow Help Desk
+          li
+            a(href="https://portal.adp.com/public/index.htm"): .btn.arrow ADP
+          li
+            a(href="http://10.0.1.27/navigation/website.asp"): .btn.arrow CHARM
+          li
+            a(href="http://www.opentable.com/start/home"): .btn.arrow OpenTable.com                           

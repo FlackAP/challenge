@@ -30,8 +30,8 @@ gulp.task('styles', function () {
       sourceComments: 'map', 
       sourceMap: 'sass', 
       style: 'expanded',
-      // include bourbon (for local styles only)
-      includePaths: require('node-bourbon').includePaths 
+      // // include bourbon (for local styles only)
+      // includePaths: require('node-bourbon').includePaths 
     }))
     .pipe($.autoprefixer('last 1 version'))
     .pipe(gulp.dest('dist/stylesheets'))
