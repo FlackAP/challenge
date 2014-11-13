@@ -1,9 +1,9 @@
 // first extend the layout found in src/templates/layouts/main
 extends ../layouts/main
+include ../mixins/newsFeed
 
 // cool content goes here
 block content
-  
   
   .row.masthead
     .col-md-12
@@ -32,4 +32,16 @@ block content
           li
             a(href="http://10.0.1.27/navigation/website.asp"): .btn.arrow CHARM
           li
-            a(href="http://www.opentable.com/start/home"): .btn.arrow OpenTable.com                           
+            a(href="http://www.opentable.com/start/home"): .btn.arrow OpenTable.com
+
+  .row.news
+    .col-md-4.col-xs-6
+    .col-md-4.col-xs-6
+      .col-md-12
+        //- author is not included in rss feed, so I made the decision to omit that line
+        .news-feed
+      .col-md-12
+    .col-md-4.col-xs-12
+
+block scripts
+  +newsFeed()
