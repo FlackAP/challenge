@@ -32,6 +32,13 @@ h1 {
   float: right;
   margin: 1px 0 0 10px;
 }
+.blue-arrow:after {
+  content: url(../images/blue-arrow.png);
+  width: 8px;
+  height: 10px;
+  float: right;
+  margin: 1px 0 0 10px;
+}
 
 // header/hero styles
 .masthead {
@@ -85,6 +92,39 @@ h1 {
 }
 
 .news {
-  margin:0;
+  margin: 0 auto;
+  width:99%;
+
+  a {
+    color: #569fbd;
+  }
+
+  .news-section {
+    margin: 40px 0px;
+  }
+
+  .news-headline {
+    background:white;
+    font-size:16px;
+    padding: 10px 16px;
+    -webkit-border-top-left-radius: 6px;
+    -webkit-border-top-right-radius: 6px;
+    -moz-border-radius-topleft: 6px;
+    -moz-border-radius-topright: 6px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .news-link {
+    background:white;
+    padding: 10px 20px;
+    font-size: 14px;
+    margin-top:2px;
+    width:100%;
+    display:inline-block;
+  }
+
+
 }
+
 

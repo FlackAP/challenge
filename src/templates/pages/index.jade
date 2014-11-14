@@ -35,13 +35,37 @@ block content
             a(href="http://www.opentable.com/start/home"): .btn.arrow OpenTable.com
 
   .row.news
-    .col-md-4.col-xs-6
-    .col-md-4.col-xs-6
+    .col-md-4.col-sm-6
+      .news-section
+        .news-headline.blue-arrow: a(href="http://twitter.com/opentable") Recent Tweets
+        .news-link 
+          p 
+            | <strong>OpenTable</strong> @OpenTable • Oct 6
+            br
+            | Get over the hump with San Diego Restaurant Week$10, $15, or $20 lunches + $25, $35, or $45 dinners
+        .news-link 
+          p 
+            | <strong>OpenTable</strong> @OpenTable • Oct 6
+            br
+            | Get over the hump with San Diego Restaurant Week$10, $15, or $20 lunches + $25, $35, or $45 dinners!
+        .news-link
+          p 
+            | <strong>OpenTable</strong> @OpenTable • Oct 6
+            br
+            | Get over the hump with San Diego Restaurant Week$10, $15, or $20 lunches + $25, $35, or $45 dinners!
+        .news-link
+          p 
+            | <strong>OpenTable</strong> @OpenTable • Oct 6
+            br
+            | Get over the hump with San Diego Restaurant Week$10, $15, or $20 lunches + $25, $35, or $45 dinners!
+    .col-md-4.col-sm-6
+      .col-md-12(style="padding:0")
+        .news-section
+          .news-headline.blue-arrow: a(href="") Recent News
+          //- author is not included in rss feed, so I made the decision to omit that line
+          .news-feed
       .col-md-12
-        //- author is not included in rss feed, so I made the decision to omit that line
-        .news-feed
-      .col-md-12
-    .col-md-4.col-xs-12
+    .col-md-4.col-sm-12
 
 block scripts
   +newsFeed()

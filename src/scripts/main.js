@@ -11,7 +11,7 @@ function newsFeed() {
           
           for(var i=0;i < 2; i++) {
             if (stories[i]) {
-              fragment += '<a class="news-link" href="'+stories[i].link+'">'+stories[i].title+'</a><br><p class="news-date"></p>';
+              fragment += '<strong><a class="news-link" href="'+stories[i].link+'">'+stories[i].title+'</a></strong>';
             }
           }
          
