@@ -37,7 +37,7 @@ block content
   .row.news
     .col-md-4.col-sm-6
       .news-section
-        .news-headline.blue-arrow: a(href="http://twitter.com/opentable") Recent Tweets
+        .news-headline.blue-arrow: a(href="http://twitter.com/opentable") RECENT TWEETS
         .news-link 
           p 
             | <strong>OpenTable</strong> @OpenTable • Oct 6
@@ -61,10 +61,19 @@ block content
     .col-md-4.col-sm-6
       .col-md-12(style="padding:0")
         .news-section
-          .news-headline.blue-arrow: a(href="") Recent News
+          .news-headline.blue-arrow: a(href="") RECENT NEWS
           //- author is not included in rss feed, so I made the decision to omit that line
           .news-feed
-      .col-md-12
+      .col-md-12(style="padding:0")
+          .news-headline.blue-arrow: a(href="") SELF-SERVICE
+          .news-link
+            ul#self-service
+              li: a(href="https://hire.jobvite.com/Home/Dashboard.aspx?login=1") ADP (Time Off, Pay, etc.)
+              li: a(href="https://www.concursolutions.com/") Concur - Us Expenses
+              li: a(href="https://www.docusign.net/Member/MemberLogin.aspx") CHARM
+              li: a(href="https://www.docusign.net/Member/MemberLogin.aspx") Docusign
+              li: a(href="https://www.dropbox.com/home") Dropbox
+              li: a(href="https://drive.google.com/a/opentable.com/#my-drive") Google Drives
     .col-md-4.col-sm-12
 
 block scripts

@@ -11,7 +11,7 @@ body {
 }
 
 h1 {
-  font-size: 26px;
+  font-size: 23px;
 }
 
 // utility styles
@@ -40,7 +40,8 @@ h1 {
   margin: 1px 0 0 10px;
 }
 
-// header/hero styles
+// Header/hero styles
+
 .masthead {
   margin: 0;
 
@@ -91,6 +92,8 @@ h1 {
   }
 }
 
+// News Section Styles
+
 .news {
   margin: 0 auto;
   width:99%;
@@ -122,9 +125,25 @@ h1 {
     margin-top:2px;
     width:100%;
     display:inline-block;
+
+    &:last-child {
+      -webkit-border-bottom-left-radius: 6px;
+      -webkit-border-bottom-right-radius: 6px;
+      -moz-border-radius-bottomleft: 6px;
+      -moz-border-radius-bottomright: 6px;
+      border-bottom-left-radius: 6px;
+      border-bottom-right-radius: 6px;
+    }
   }
 
+  ul {
+    list-style-type: none;
+    padding:0;
 
+    li {
+      font-size: 15px;
+    }
+  }
 }
 
 
