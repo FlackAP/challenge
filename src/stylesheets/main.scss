@@ -103,7 +103,7 @@ h1 {
   }
 
   .news-section {
-    margin: 40px 0px;
+    margin: 40px 0px 20px;
   }
 
   .news-headline {
@@ -120,7 +120,7 @@ h1 {
 
   .news-link {
     background:white;
-    padding: 10px 20px;
+    padding: 18px 20px 10px;
     font-size: 14px;
     margin-top:2px;
     width:100%;
@@ -133,6 +133,9 @@ h1 {
       -moz-border-radius-bottomright: 6px;
       border-bottom-left-radius: 6px;
       border-bottom-right-radius: 6px;
+    }
+    span  {
+      color:rgb(166, 166, 166);
     }
   }
 
