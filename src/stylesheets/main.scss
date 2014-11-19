@@ -68,6 +68,11 @@ h1 {
   .nav {
     padding: 10px 20px;
 
+    .btn:hover {
+      background:#fff;
+      color:#da3743;
+    }
+
     p {
       font-size:14px;
     }
