@@ -11,6 +11,7 @@ function newsFeed() {
           
           for(var i=0;i < 2; i++) {
             if (stories[i]) {
+              // I made the decision to hard-code author/date here as I couldn't find the info in the RSS feed 
               fragment += '<p class="news-link" style="margin-bottom:0; padding-bottom:18px;"><a href="'+stories[i].link+'"><strong>'+stories[i].title+'</strong></a><br><span>By Caroline Potter on October 1, 2014</span></p>';
             }
           }

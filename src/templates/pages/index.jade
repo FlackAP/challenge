@@ -62,7 +62,6 @@ block content
       .col-md-12(style="padding:0")
         .news-section
           .news-headline.blue-arrow: a(href="") RECENT NEWS
-          //- author is not included in rss feed, so I made the decision to omit that line
           .news-feed
       .col-md-12(style="padding:0")
         .news-headline.blue-arrow: a(href="") SELF-SERVICE
@@ -86,6 +85,9 @@ block content
             | before the year's end. To pay with OpenTable, make sure you are using the latest version
             | of the OpenTable iPhone app. Diners who book a participating restaurant can add a credit
             | card, which enables them...
+
+  .row.footer(style="background:#333333; height:200px")
+
 
 block scripts
   +newsFeed()
