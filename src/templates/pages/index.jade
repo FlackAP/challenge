@@ -61,10 +61,10 @@ block content
     .col-md-3.col-sm-6
       .col-md-12(style="padding:0")
         .news-section
-          .news-headline.blue-arrow: a(href="") RECENT NEWS
+          .news-headline.blue-arrow: a(href="http://press.opentable.com/releases.cfm?view=all") RECENT NEWS
           .news-feed
       .col-md-12(style="padding:0")
-        .news-headline.blue-arrow: a(href="") SELF-SERVICE
+        .news-headline.blue-arrow: a(href="http://yablew.it") SELF-SERVICE
         .news-link
           ul#self-service
             li: a(href="https://hire.jobvite.com/Home/Dashboard.aspx?login=1") ADP (Time Off, Pay, etc.)
@@ -75,7 +75,7 @@ block content
             li: a(href="https://drive.google.com/a/opentable.com/#my-drive") Google Drives
     .col-md-5.col-sm-12
       .news-section
-        .news-headline.blue-arrow: a(href="") RECENT VIDEOS
+        .news-headline.blue-arrow: a(href="https://www.youtube.com/user/OpenTableRestaurant") RECENT VIDEOS
         .news-link
           iframe(width="100%" height="285" src="//www.youtube.com/embed/YTXDXggWMjQ" frameborder="0" allowfullscreen)
           h4: a Pay with OpenTable: Restaurant Mobile Payments
@@ -87,7 +87,7 @@ block content
             | card, which enables them...
 
   .row.footer
-    .col-md-2.col-xs-6.links
+    .col-md-2.col-sm-3.col-xs-4.links
       ul
         li.heading OPENTABLE
         li: a(href="http://opentable.com/about/") About Us
@@ -95,7 +95,7 @@ block content
         li: a(href="http://opentable.com/careers") Careers
         li: a(href="http://press.opentable.com")  Press
         li: a(href="http://rgmgroup.com/advertisers-opentable.html") Advertise
-    .col-md-2.col-xs-6.links
+    .col-md-2.col-sm-3.col-xs-4.links.more-links
       ul 
         li.heading MORE
         li: a(href="http://www.opentable.co.uk") OpenTable.co.uk
@@ -104,17 +104,20 @@ block content
         li: a(href="https://community.opentable.com/t5/FAQs-Knowledge-Base/OpenTable-Affiliate-Program/ta-p/400?profile.language=en") Affiliate Program
         li: a(href="https://community.opentable.com/t5/OpenTable-Community/ct-p/OpenTable_Community_US?profile.language=en") Contact Us
         li: a(href="https://community.opentable.com/t5/OpenTable-Community/ctp/OpenTable_Community_US?profile.language=en") Help & Support
-    .col-md-2.col-xs-6.links
+    .col-md-2.col-sm-3.col-xs-4.links.social-links
       ul
         li.heading JOIN US ON
       .icon-list
-        a(href="https://twitter.com/OpenTable")
-          | img.icon(src="images/twitter.png")
-        a(href="https://www.facebook.com/OpenTable")
-          | img.icon(src="images/facebook.png")
-        a(href="https://plus.goggle.com/+OpenTable/")
-          | img.icon(src="images/googleplus.png")
-
+        a(href="https://twitter.com/OpenTable"): img.icon(src="images/twitter.png" alt="Twitter Page" title="Twitter")
+        a(href="https://www.facebook.com/OpenTable"): img.icon(src="images/facebook.png" alt="Facebook Page" title="Facebook")
+        a(href="https://plus.goggle.com/+OpenTable/"): img.icon(src="images/googleplus.png" alt="Google Plus Page" title="Google Plus")
+    .col-xs-12.legal
+      hr
+      p Copyright &#169; 2014 OpenTable, Inc. 1 Montgomery St Ste 700, San Francisco CA 94104- All rights reserved.
+      a(href="http://www.opentable.com/info/privacypolicy.aspx") Privacy Policy   
+      a(href="http://www.opentable.com/info/agreement.aspx") Terms of Use    
+      a(href="http://www.opentable.com/opentable-sitemap.aspx") Sitemap    
+      a(href="http://m.opentable.com") Mobile Site
 
 block scripts
   +newsFeed()

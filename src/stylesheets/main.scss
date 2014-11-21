@@ -162,18 +162,32 @@ h1 {
 .footer {
   background: #333333;
   padding: 0 20px;
+  color: #6f6f6f;
 
   .icon-list {
-    padding: 0 0 0 8px;
+    padding: 0 0 0 18px;
 
     .icon {
       width:25px;
-      margin-left:10px;
     }
+  }
+
+  .legal {
+    margin-bottom:20px;
   }
 
   .links {
     padding:0;
+  }
+
+  a {
+    color:#BBB;
+    text-decoration:none;
+    margin-right:10px;
+  }
+
+  hr {
+    border-color: #BBB;
   }
 
   ul {
@@ -188,15 +202,25 @@ h1 {
     li {
       list-style-type:none;
       padding: 5px 20px;
-      color: #5c5c5c;
       font-size:14px;
+    }
+  }
 
-      a {
-        color:#CCC;
-        text-decoration:none;
+  @media (max-width:480px){
+    .more-links {
+      width:60%;
+    }
+
+    .social-links {
+      width:100%;
+      text-align:center;
+
+      .icon-list {
+        padding:0;
       }
     }
   }
 }
+
 
 
